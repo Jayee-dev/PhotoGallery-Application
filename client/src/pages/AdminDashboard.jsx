@@ -18,6 +18,7 @@ function formatDate(value) {
 function getImageUrl(filepath) {
   if (!filepath) return "";
 
+  
   if (filepath.startsWith("http://") || filepath.startsWith("https://")) {
     return filepath;
   }
