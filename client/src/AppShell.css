@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f7f8fc; }
+.app-shell { min-height: 100vh; }
+.app-shell-header {
+  position: relative;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 13px max(4vw, 20px);
+  background: #171d34;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,.12);
+}
+.app-shell-brand { display: flex; align-items: center; gap: 10px; min-width: 190px; }
+.app-shell-brand-icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; background: rgba(255,255,255,.13); font-size: 20px; }
+.app-shell-brand strong { display: block; color: #fff; font-size: 16px; }
+.app-shell-brand small { display: block; margin-top: 2px; color: #b8c0d9; font-size: 9px; letter-spacing: .4px; }
+.app-shell-nav { display: flex; align-items: center; gap: 7px; }
+.app-shell-nav button { padding: 10px 14px; border: 1px solid transparent; border-radius: 9px; background: transparent; color: #dbe1f3; cursor: pointer; font-size: 12px; font-weight: 700; }
+.app-shell-nav button:hover, .app-shell-nav button.active { border-color: rgba(255,255,255,.12); background: rgba(255,255,255,.13); color: white; }
+.app-shell-user { display: flex; align-items: center; gap: 12px; color: #dbe1f3; font-size: 12px; white-space: nowrap; }
+.app-shell-user button { padding: 9px 12px; border: 1px solid rgba(255,255,255,.28); border-radius: 9px; background: transparent; color: white; cursor: pointer; font-size: 11px; font-weight: 700; }
+.app-shell-user button:hover { background: rgba(255,255,255,.12); }
+.app-shell-demo-note { padding: 10px 15px; background: #f0f1f7; color: #7a8191; text-align: center; font-size: 10px; }
+@media (max-width: 850px) {
+  .app-shell-header { flex-wrap: wrap; }
+  .app-shell-brand { flex: 1; }
+  .app-shell-nav { order: 3; width: 100%; justify-content: center; }
+  .app-shell-user { margin-left: auto; }
+}
+@media (max-width: 480px) {
+  .app-shell-header { gap: 10px; padding: 11px 14px; }
+  .app-shell-user span { display: none; }
+  .app-shell-nav button { padding: 9px 10px; font-size: 11px; }
+}

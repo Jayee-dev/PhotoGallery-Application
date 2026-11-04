@@ -1,0 +1,129 @@
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+  background: linear-gradient(125deg, rgba(16, 24, 40, .88), rgba(45, 55, 72, .82)),
+    url("https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=80") center/cover;
+}
+
+.auth-card {
+  width: min(100%, 430px);
+  padding: 38px;
+  border: 1px solid rgba(255, 255, 255, .7);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, .97);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .28);
+}
+
+.auth-logo {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 18px;
+  border-radius: 20px;
+  background: #20232a;
+  color: #fff;
+  font-size: 30px;
+}
+
+.auth-eyebrow {
+  margin: 0 0 8px;
+  color: #667085;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.auth-card h1 {
+  margin: 0;
+  color: #20232a;
+  font-size: 30px;
+  text-align: center;
+}
+
+.auth-subtitle {
+  margin: 9px 0 25px;
+  color: #667085;
+  text-align: center;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.auth-card label {
+  margin: 8px 0 0;
+  color: #344054;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 14px;
+}
+
+.auth-card input:focus {
+  outline: 3px solid rgba(65, 87, 210, .12);
+  border-color: #4756c8;
+}
+
+.auth-primary,
+.auth-secondary {
+  width: 100%;
+  min-height: 46px;
+  margin-top: 14px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.auth-primary {
+  background: #20232a;
+  color: #fff;
+}
+
+.auth-primary:hover {
+  background: #3b4252;
+}
+
+.auth-switch-text {
+  margin: 22px 0 0;
+  color: #667085;
+  font-size: 13px;
+  text-align: center;
+}
+
+.auth-secondary {
+  margin-top: 8px;
+  border: 1px solid #20232a;
+  background: #fff;
+  color: #20232a;
+}
+
+.auth-secondary:hover {
+  background: #f2f4f7;
+}
+
+.auth-demo-note {
+  margin: 18px 0 0;
+  color: #98a2b3;
+  font-size: 11px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .auth-card { padding: 28px 22px; }
+}
