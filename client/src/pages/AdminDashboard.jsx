@@ -25,6 +25,7 @@ function getImageUrl(filepath) {
   return `${API_ORIGIN}${filepath.startsWith("/") ? "" : "/"}${filepath}`;
 }
 
+
 function AdminDashboard() {
   const [activeTab, setActiveTab] = useState("users");
   const [searchTerm, setSearchTerm] = useState("");
