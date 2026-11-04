@@ -103,6 +103,7 @@ function App() {
 
         </nav>
 
+            
         <div className="app-shell-user">
           <span>Hi, {currentUser.name || "User"}</span>
 
